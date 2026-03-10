@@ -3,7 +3,7 @@ from core.runner import run
 
 def check_services():
 
-    print("\n[+] Checking running services")
+    print("\n[+] Checking running services (filtered)")
 
     processes = run("ps aux")
 
@@ -11,7 +11,7 @@ def check_services():
         print("[!] Could not read process list")
         return
 
-    print("\n[INFO] Checking root-owned processes")
+    interesting_paths = ["/home", "/opt", "/usr/local"]
 
     for line in processes.split("\n"):
 
@@ -25,14 +25,17 @@ def check_services():
 
         command = " ".join(parts[10:])
 
-        print(f"\n[INFO] Root process: {command}")
-
-        # try extracting executable path
         words = command.split()
 
         for w in words:
 
             if w.startswith("/"):
+
+                # show only interesting paths
+                if not any(w.startswith(p) for p in interesting_paths):
+                    continue
+
+                print(f"\n[INFO] Root service: {command}")
 
                 writable = run(f"test -w {w} && echo writable")
 
