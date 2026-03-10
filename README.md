@@ -28,9 +28,22 @@ git clone https://github.com/rhythmsarmaa/pyPrivesc.git
 cd pyPrivesc
 python3 main.py
 
-📷 Example Output
+## 📷 Example Output
 
-(Add screenshots here later)
+### 🔹 System Info Check
+![system info](systeminfocheck.png) 
+
+### 🔹 Sudo Check
+![sudo](sudo.png)
+
+### 🔹 Cron Check
+![cron](cron.png)
+
+### 🔹 Kernel Check
+![kernel](kernel.png)
+
+### 🔹 Weak File Permissions Check
+![weak file permissions](weakfilepermission.png)
 
   Purpose
 
