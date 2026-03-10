@@ -31,7 +31,7 @@ python3 main.py
 ## 📷 Example Output
 
 ### 🔹 System Info Check
-![system info](systeminfocheck.png) 
+![system info](systeminfo.png) 
 
 ### 🔹 Sudo Check
 ![sudo](sudo.png)
