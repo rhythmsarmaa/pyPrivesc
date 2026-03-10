@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Platform](https://img.shields.io/badge/Platform-Linux-green)
+![License](https://img.shields.io/badge/Use-Educational-orange)
   pyPrivesc
 
 pyPrivesc is a Linux privilege escalation enumeration tool written in Python.
