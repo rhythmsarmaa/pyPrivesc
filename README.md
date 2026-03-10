@@ -1,6 +1,7 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Platform](https://img.shields.io/badge/Platform-Linux-green)
 ![License](https://img.shields.io/badge/Use-Educational-orange)
+
   pyPrivesc
 
 pyPrivesc is a Linux privilege escalation enumeration tool written in Python.
@@ -27,8 +28,11 @@ It automates manual enumeration techniques commonly used in HTB, TryHackMe, and 
 ✔ Running services inspection
 
   Usage
+  
 git clone https://github.com/rhythmsarmaa/pyPrivesc.git
+
 cd pyPrivesc
+
 python3 main.py
 
 ## 📷 Example Output
